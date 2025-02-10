@@ -53,7 +53,6 @@ class ExpressionInterestControllerTest(
         }
 
         val result = mockMvc.performAuthorisedPut("$basePath/$validHmppsId/expression-of-interest/jobs/$jobId")
-        println("result ${result.response.contentAsString}")
         result.response.status.shouldBe(HttpStatus.OK.value())
       }
 
